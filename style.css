@@ -1,0 +1,170 @@
+/* Created by Mirwais */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial;
+    border: none;
+    outline: none;
+    text-decoration: none;
+  }
+  body {
+    height: 100vh;
+    background: #fff;
+  }
+  /* Qasim */
+  .form {
+    width: 50%;
+    margin: 3% auto;
+    text-align: center;
+  }
+  .form .ad {
+    width: 100%;
+    padding: 8px 15px;
+    margin-top: -10px;
+    background: rgba(185,185,12,0.1);
+    display: none;
+    align-items: center;
+    border-bottom: 1px solid rgb(185,185,12,0.3);
+  }
+  .form .ad a {
+    color: #fff;
+  }
+  .form .ad img {
+    width: 16px;
+    margin-right: 10px;
+  }
+  .form .ad p {
+    font-size: 14px;
+    color: #466baf;
+  }
+  .form .logo {
+    width: 120px;
+    margin-top: 5px;
+  }
+  .form input {
+    width: 90%;
+    height: 42px;
+    padding: 0 12px;
+    background: #f1f3f3;
+    border: 1px solid #e4e4e4;
+    border-radius: 3px;
+    margin-top: 5px;
+  }
+  .form .input {
+    position: relative;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 5px;
+  }
+  .form .input input {
+    width: 100%;
+    margin: 0;
+  }
+  .form .input span {
+    position: absolute;
+    content: '';
+    top: 1px;
+    right: 1px;
+    padding: 0 12px;
+    height: 40px;
+    line-height: 40px;
+    font-weight: bold;
+    font-size: 14px;
+    color: #1876f3;
+    background: #f1f3f3;
+    border-left: 1px solid #e4e4e4;
+    display: none;
+    text-transform: uppercase;
+  }
+  .form button {
+    width: 90%;
+    height: 41px;
+    background: #1876f3;
+    color: #fff;
+    border-radius: 3px;
+    font-weight: bold;
+    margin-top: 10px;
+    font-size: 16px;
+    margin-bottom: 15px;
+    text-shadow: 0 -1px 2px rgba(0,0,0,0.1);
+  }
+  .form button:hover {
+    box-shadow: 0 2px 3px rgba(0,0,0,0.2);
+  }
+  .form .fo {
+    color: #1876f3;
+  }
+  .form .or {
+    width: 90%;
+    margin: 15px 5%;
+    margin-bottom: 25px;
+    position: relative;
+  }
+  .form .or:before {
+    position: absolute;
+    content: '';
+    top: 50%;
+    left: 0;
+    width: 45%;
+    height: 1px;
+    background: #e4e4e4;
+  }
+  .form .or:after {
+    position: absolute;
+    content: '';
+    top: 50%;
+    right: 0;
+    width: 45%;
+    height: 1px;
+    background: #e4e4e4;
+  }
+  .form .c {
+    padding: 10px 20px;
+    background: #46a10a;
+    color: #fff;
+    font-weight: bold;
+    font-size: 14px;
+    border-radius: 3px;
+    text-shadow: 1px -1px 2px rgba(0,0,0,0.4);
+  }
+  .form .lang {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 110px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .form .lang .box a {
+    display: block;
+    font-size: 12px;
+    margin: 2px 0;
+    color: #255596;
+  }
+  .form .lang .box .p {
+    width: 22px;
+    height: 22px;
+    text-align: center;
+    line-height: 20px;
+    margin: 1px auto;
+    border: 1px solid #255596;
+    border-radius: 2px;
+    font-size: 18px;
+  }
+  .form .lnc {
+    font-size: 12px;
+    color: #7a7575;
+    margin-bottom: 20px;
+  }
+@media screen and (max-width: 400px) {
+    .form {
+      width: 100%;
+    }
+    .form .ad {
+      display: flex;
+    }
+    .form .lang {
+      justify-content: space-around;
+    }
+  }
